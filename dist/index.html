@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+
+	    <style>
+
+	    	body {
+	    		padding-top: 50px;
+	    	}
+	    	.btn-file {
+			    position: relative;
+			    overflow: hidden;
+			}
+			.btn-file input[type=file] {
+			    position: absolute;
+			    top: 0;
+			    right: 0;
+			    min-width: 100%;
+			    min-height: 100%;
+			    font-size: 100px;
+			    text-align: right;
+			    filter: alpha(opacity=0);
+			    opacity: 0;
+			    outline: none;
+			    background: white;
+			    cursor: inherit;
+			    display: block;
+			}
+
+			.file-droparea {
+				border: 2px dotted black;
+				padding: 20px;
+			}
+	    </style>
+  	</head>
+  	<body>
+	    <div class="container">
+	    	<div class="row">
+	    		<div class="col-xs-4">
+	    			<div class="file-droparea">
+			    		<span class="btn btn-primary btn-file">
+						    Browse <input type="file">
+						</span>
+					</div>
+				</div>
+	    	</div>
+	    </div>
+
+	    <script src="app.js"></script>
+  	</body>
+</html>
